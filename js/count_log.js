@@ -23,6 +23,7 @@ function getlog() {
   var days = document.getElementById('p_str').value;
   var str = '', total = 0, totalu = 0;
   var xhr = new XMLHttpRequest();
+  if (p_str.className === "error") return;
   xhr.open('GET', 'http://localhost:8080/dd/CH.COUNT_LOG?' + 'p_str=' + days + '_1', true);
 //  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.send();
