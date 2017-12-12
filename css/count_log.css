@@ -1,0 +1,77 @@
+.form-text {
+     width: 50px; /* Ширина поля */
+     margin-left: 10px; /* Расстояние между полем и текстом */
+     border: 1px solid #abadb3; /* Рамка вокруг текстового поля */
+     padding: 2px; /* Поля вокруг текста */
+}
+
+.form-text:focus {
+     background: #ffe; /* Цвет фона */
+     border: 1px solid #29B0D9; /* Параметры рамки */
+   }
+
+.title { float: left; }
+
+.btn {
+  font-weight: 700;
+  font-size: 100%;
+  color: white;
+  text-decoration: none;
+  padding: .2em 1em calc(.5em + 2px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+
+btn:hover { background: rgb(53, 167, 110); }
+
+btn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.inline { display: inline-block; }
+.arrow-up, .arrow-down {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;   
+  float: right;
+  visibility: visible;
+}
+.arrow-up {
+  border-bottom-color: black;  
+  border-top: 0;
+}
+.arrow-down {
+  border-top-color: black;  
+  border-bottom: 0;
+}
+#log {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#log td, #log th {
+    border: 1px solid aliceblue;
+    padding: 8px;
+}
+
+#log tr:nth-child(even){background-color: azure;}
+
+#log tr:hover {background-color: aliceblue;}
+
+#log th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+}
+.input, .error {
+    width: 50px;
+   }
+.error { border-color: red; } 
+.errormess { color: red; } 
