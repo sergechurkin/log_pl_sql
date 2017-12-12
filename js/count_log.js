@@ -1,9 +1,9 @@
-const DONE = 4; // запрос завершён
+const DONE = 4; // Р·Р°РїСЂРѕСЃ Р·Р°РІРµСЂС€С‘РЅ
 
 function numValidate(e) {
   if (isNaN(e.value)) {
     e.className = "error";
-    document.getElementById('error' + e.id).innerHTML = 'Enter a number';
+    document.getElementById('error' + e.id).innerHTML = 'Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ';
   }
 }
 
@@ -103,10 +103,10 @@ function getlog() {
 
     function sortlog(colNum, type, isDown) {
       var tbody = log.getElementsByTagName('tbody')[0];
-      // Составить массив из TR
+      // РЎРѕСЃС‚Р°РІРёС‚СЊ РјР°СЃСЃРёРІ РёР· TR
       var rowsArray = [].slice.call(tbody.rows);
       if (rowsArray.length < 2) return;
-// определить функцию сравнения, в зависимости от типа
+// РѕРїСЂРµРґРµР»РёС‚СЊ С„СѓРЅРєС†РёСЋ СЃСЂР°РІРЅРµРЅРёСЏ, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РёРїР°
       var compare;
       switch (type) {
         case 'date':
@@ -128,11 +128,11 @@ function getlog() {
           };
           break;
       }
-      // сортировать
+      // СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ
       rowsArray.sort(compare);
       log.removeChild(tbody);
-      // добавить результат в нужном порядке в TBODY
-      // они автоматически будут убраны со старых мест и вставлены в правильном порядке
+      // РґРѕР±Р°РІРёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚ РІ РЅСѓР¶РЅРѕРј РїРѕСЂСЏРґРєРµ РІ TBODY
+      // РѕРЅРё Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё Р±СѓРґСѓС‚ СѓР±СЂР°РЅС‹ СЃРѕ СЃС‚Р°СЂС‹С… РјРµСЃС‚ Рё РІСЃС‚Р°РІР»РµРЅС‹ РІ РїСЂР°РІРёР»СЊРЅРѕРј РїРѕСЂСЏРґРєРµ
       for (var i = 0; i < rowsArray.length; i++) {
         tbody.appendChild(rowsArray[i]);
       }
