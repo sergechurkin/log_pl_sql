@@ -54,7 +54,7 @@ function getlog() {
       str = '';
       if (data[0] != undefined) {
         str = str + '<tr id="total">' + 
-             '<td><strong>Total<strong></td>' +
+             '<td><strong>Всего<strong></td>' +
              '<td><strong>' + totalu + '</strong></td>' +
              '<td><strong>' + total + '</strong></td>' +
              '</tr>';
